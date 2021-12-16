@@ -37,7 +37,7 @@ public class CalorieCalculator extends AppCompatActivity {
         Weight = Double.parseDouble(weight.getText().toString());
         Age = Double.parseDouble(age.getText().toString());
         Height = Double.parseDouble(age.getText().toString());
-        ResultM = (Weight * 100) * (Height * 6.25) * (Age * 5) / 5;
+        ResultM = (Weight * 100) + (Height * 6.25) - (Age * 5) + 5;
         result.setText(String.valueOf(ResultM));
 
     }
